@@ -105,3 +105,21 @@ footer {
   0%, 100% { opacity: 0.2; transform: scale(1); }
   50% { opacity: 1; transform: scale(1.5); }
 }
+
+#playMusic {
+  padding: 10px 20px;
+  margin: 20px auto;
+  display: block;
+  font-size: 1rem;
+  background-color: #ffe066;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #333;
+  transition: 0.3s ease;
+  z-index: 1;
+  position: relative;
+}
+#playMusic:hover {
+  background-color: #ffcd00;
+}
