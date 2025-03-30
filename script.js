@@ -1,12 +1,4 @@
 
-const envelope = document.getElementById('envelope');
-const card = document.getElementById('card');
-
-envelope.addEventListener('click', () => {
-  envelope.style.display = 'none';
-  card.classList.remove('hidden');
-});
-
 // YouTube Music Player
 let player;
 function onYouTubeIframeAPIReady() {
