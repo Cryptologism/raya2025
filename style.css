@@ -5,7 +5,7 @@ body {
   padding: 0;
   background: url('https://img.freepik.com/free-vector/realistic-ramadan-kareem-illustration_52683-57886.jpg?t=st=1743314183~exp=1743317783~hmac=ddeed582997e62cdfcf1e43cbe84ef5990d0f3954df732325c50d9ac944d48fd&w=1380') no-repeat center center fixed;
   background-size: contain;
-  background-color: #000;
+  background-color: #111;
   font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
@@ -19,32 +19,32 @@ body {
   max-width: 800px;
   padding: 0 20px;
   border-radius: 12px;
-  color: #fff;
+  color: #e0e0e0;
   margin: 20px;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7), 0 0 12px rgba(255, 255, 255, 0.5);
 }
 
 .card h1 {
   font-family: 'Amiri', serif;
-  color: #ffe066;
-  font-size: 2rem;
+  color: #fdfd96;
+  font-size: 2.4rem; font-weight: bold;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
 
 .card p {
   margin-bottom: 1em;
-  line-height: 1.6;
+  line-height: 1.8; font-weight: 500;
 }
 
 .card .from {
   font-style: italic;
-  color: #eee;
+  color: #ccc;
 }
 
 #playMusic {
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: #ffe066;
+  background-color: #fdfd96;
   border: none;
   border-radius: 8px;
   cursor: pointer;
