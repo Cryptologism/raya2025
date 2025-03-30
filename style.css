@@ -63,13 +63,27 @@ body {
 }
 
 .ketupat-row {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+  position: relative;
+  height: 80px;
   margin-top: 30px;
 }
 
 .ketupat-gif {
-  width: 120px;
+  width: 50px;
   height: auto;
+  position: absolute;
+  bottom: 0;
+}
+
+.ketupat-left {
+  left: 0;
+}
+
+.ketupat-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ketupat-right {
+  right: 0;
 }
