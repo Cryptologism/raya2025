@@ -55,13 +55,6 @@ body {
   background-color: #ffcd00;
 }
 
-.ketupat-animation {
-  width: 100px;
-  height: auto;
-  display: block;
-  margin: 0 auto 20px;
-}
-
 .ketupat-row {
   position: relative;
   height: 80px;
@@ -86,4 +79,12 @@ body {
 
 .ketupat-right {
   right: 0;
+}
+
+.text-box {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #ffe066;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
 }
