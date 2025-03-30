@@ -1,86 +1,82 @@
+/* Minimalist & modern */
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #0d1b2a, #1b263b);
-  font-family: 'Segoe UI', sans-serif;
-  color: #fff;
-  overflow-x: hidden;
-}
-
-.lampu-container {
+  background-color: #f4f4f4;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #222;
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.lampu {
-  width: 15px;
-  height: 25px;
-  border-radius: 50%;
-  margin: 0 6px;
-  background-color: yellow;
-  animation: blink 1.5s infinite alternate;
-}
-
-.lampu:nth-child(2) { background-color: lime; }
-.lampu:nth-child(3) { background-color: cyan; }
-.lampu:nth-child(4) { background-color: magenta; }
-.lampu:nth-child(5) { background-color: orange; }
-
-@keyframes blink {
-  0% { opacity: 0.2; transform: scale(0.9); }
-  100% { opacity: 1; transform: scale(1.1); }
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .card {
   max-width: 500px;
-  margin: 50px auto;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  margin: auto;
+  padding: 40px 30px;
+  background: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  border-radius: 12px;
   text-align: center;
-  backdrop-filter: blur(10px);
 }
 
 h1 {
-  color: #fdd835;
-  font-size: 2em;
+  font-size: 1.8em;
+  color: #1a535c;
+  margin-bottom: 20px;
 }
 
 .greeting {
-  margin: 20px 0;
-  font-size: 1.1rem;
-  color: #e0e0e0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
 }
 
 .from {
+  margin-top: 30px;
   font-style: italic;
-  color: #cfcfcf;
-  margin-top: 20px;
-}
-
-.pelita {
-  width: 80px;
-  margin: 15px;
-  animation: float 3s ease-in-out infinite;
-}
-
-.pelita-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+  color: #777;
 }
 
 footer {
   text-align: center;
   font-size: 0.9rem;
-  margin-top: 40px;
+  padding: 20px;
+  margin-top: auto;
   color: #aaa;
+}
+
+/* Lampu */
+.lampu-container {
+  margin: 30px 0 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.lampu {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ffcb05;
+  animation: blink 1.5s infinite ease-in-out;
+}
+
+@keyframes blink {
+  0% { opacity: 0.3; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1.1); }
+}
+
+/* Pelita */
+.pelita {
+  width: 40px;
+  margin: 10px;
+  opacity: 0.8;
+}
+
+.pelita-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
 }
