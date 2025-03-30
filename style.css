@@ -9,10 +9,10 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: column;
 }
 
 .container {
-  position: relative;
   text-align: center;
 }
 
@@ -24,11 +24,7 @@ body {
   cursor: pointer;
   border-radius: 4px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  transition: transform 0.6s ease;
-}
-
-.envelope.open {
-  transform: rotateX(180deg);
+  margin: 20px auto;
 }
 
 .envelope .flap {
@@ -44,7 +40,7 @@ body {
 .card {
   display: none;
   max-width: 500px;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.95);
   padding: 30px;
   border-radius: 12px;
   margin-top: 20px;
@@ -67,94 +63,16 @@ body {
   display: none;
 }
 
-.ketupat {
-  width: 30px;
-  height: 30px;
-  background: #80ed99;
-  position: absolute;
-  top: -40px;
-  animation: swing 3s ease-in-out infinite;
-  transform: rotate(45deg);
+#playMusic {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ffe066;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #333;
+  margin-top: 30px;
 }
-
-.ketupat::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  width: 2px;
-  height: 10px;
-  background: #80ed99;
-  transform: translateX(-50%);
-}
-
-.ketupat-1 {
-  left: -20px;
-}
-
-.ketupat-2 {
-  right: -20px;
-  animation-delay: 1.5s;
-}
-
-@keyframes swing {
-  0% { transform: rotate(45deg) translateX(0); }
-  50% { transform: rotate(45deg) translateX(10px); }
-  100% { transform: rotate(45deg) translateX(0); }
-}
-
-.floating-ketupat {
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  background: #38b000;
-  opacity: 0.8;
-  transform: rotate(45deg);
-  animation: floatKetupat 15s linear infinite;
-  z-index: 0;
-}
-
-.floating-ketupat::after {
-  content: '';
-  position: absolute;
-  bottom: -12px;
-  left: 50%;
-  width: 3px;
-  height: 12px;
-  background: #38b000;
-  transform: translateX(-50%);
-  border-radius: 2px;
-}
-
-@keyframes floatKetupat {
-  0% {
-    top: 100%;
-    transform: rotate(45deg) translateX(0);
-  }
-  100% {
-    top: -50px;
-    transform: rotate(45deg) translateX(50px);
-  }
-}
-
-.confetti {
-  position: fixed;
-  top: 0;
-  width: 8px;
-  height: 12px;
-  border-radius: 2px;
-  opacity: 0.9;
-  animation: fallConfetti 5s linear forwards;
-  z-index: 2;
-}
-
-@keyframes fallConfetti {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(100vh) rotate(360deg);
-    opacity: 0;
-  }
+#playMusic:hover {
+  background-color: #ffcd00;
 }
