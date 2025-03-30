@@ -12,7 +12,7 @@ for (let i = 0; i < 5; i++) {
 const pelitaRow = document.getElementById('pelitaRow');
 for (let i = 0; i < 2; i++) {
   const pelita = document.createElement('img');
-  pelita.src = "https://upload.wikimedia.org/wikipedia/commons/9/9e/Pelita_icon.png";
+  pelita.src = "https://www.pngkey.com/png/detail/122-1222866_yellow-clip-art-pelita-raya-png.png";
   pelita.alt = "Pelita Raya";
   pelita.className = "pelita";
   pelitaRow.appendChild(pelita);
