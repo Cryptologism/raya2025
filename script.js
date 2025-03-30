@@ -14,3 +14,14 @@ for (let i = 0; i < 2; i++) {
   pelita.className = "pelita";
   pelitaRow.appendChild(pelita);
 }
+
+// Bintang berkelip
+const stars = document.getElementById('stars');
+for (let i = 0; i < 50; i++) {
+  const star = document.createElement('div');
+  star.className = 'star';
+  star.style.top = Math.random() * 100 + '%';
+  star.style.left = Math.random() * 100 + '%';
+  star.style.animationDelay = `${Math.random() * 2}s`;
+  stars.appendChild(star);
+}
