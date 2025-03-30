@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Poppins:wght@400;600&display=swap');
 
 body {
   margin: 0;
@@ -5,7 +6,7 @@ body {
   background: url('https://img.freepik.com/free-vector/realistic-ramadan-kareem-illustration_52683-57886.jpg?t=st=1743314183~exp=1743317783~hmac=ddeed582997e62cdfcf1e43cbe84ef5990d0f3954df732325c50d9ac944d48fd&w=1380') no-repeat center center fixed;
   background-size: contain;
   background-color: #000;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,18 +16,22 @@ body {
 
 .card {
   max-width: 600px;
-  background: rgba(255,255,255,0.95);
+  background: rgba(255,255,255,0.85);
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.3);
   text-align: left;
   color: #222;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
   margin: 20px;
 }
 
 .card h1 {
+  font-family: 'Amiri', serif;
   color: #1a535c;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
   text-align: center;
+  font-size: 2rem;
 }
 
 .card .from {
