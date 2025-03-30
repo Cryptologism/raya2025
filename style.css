@@ -54,3 +54,10 @@ body {
 #playMusic:hover {
   background-color: #ffcd00;
 }
+
+.ketupat-animation {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}
