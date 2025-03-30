@@ -16,10 +16,9 @@ body {
 }
 
 .card {
-  max-width: 700px;
-  padding: 30px;
+  max-width: 800px;
+  padding: 0 20px;
   border-radius: 12px;
-  text-align: center;
   color: #fff;
   margin: 20px;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
@@ -28,16 +27,18 @@ body {
 .card h1 {
   font-family: 'Amiri', serif;
   color: #ffe066;
-  text-align: center;
   font-size: 2rem;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
 
+.card p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
 .card .from {
-  margin-top: 20px;
   font-style: italic;
   color: #eee;
-  text-align: center;
 }
 
 #playMusic {
