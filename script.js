@@ -1,54 +1,44 @@
 
-// Lampu Raya
-const lampuContainer = document.getElementById('lampuContainer');
-for (let i = 0; i < 5; i++) {
-  const lampu = document.createElement('div');
-  lampu.className = 'lampu';
-  lampu.style.animationDelay = `${i * 0.2}s`;
-  lampuContainer.appendChild(lampu);
+const envelope = document.getElementById('envelope');
+const card = document.getElementById('card');
+
+envelope.addEventListener('click', () => {
+  envelope.classList.add('open');
+  setTimeout(() => {
+    card.classList.remove('hidden');
+  }, 600);
+});
+
+// Generate floating ketupat as surprise
+for (let i = 0; i < 20; i++) {
+  const k = document.createElement('div');
+  k.className = 'floating-ketupat';
+  k.style.left = Math.random() * 100 + 'vw';
+  k.style.animationDelay = Math.random() * 10 + 's';
+  document.body.appendChild(k);
 }
 
-// Pelita
-const pelitaRow = document.getElementById('pelitaRow');
-for (let i = 0; i < 2; i++) {
-  const pelita = document.createElement('img');
-  pelita.src = "https://www.pngkey.com/png/detail/122-1222866_yellow-clip-art-pelita-raya-png.png";
-  pelita.alt = "Pelita Raya";
-  pelita.className = "pelita";
-  pelitaRow.appendChild(pelita);
+// Confetti animation
+function createConfettiPiece() {
+  const confetti = document.createElement('div');
+  confetti.className = 'confetti';
+  confetti.style.left = Math.random() * 100 + 'vw';
+  confetti.style.backgroundColor = ['#ff595e', '#ffca3a', '#8ac926', '#1982c4', '#6a4c93'][Math.floor(Math.random() * 5)];
+  confetti.style.animationDelay = Math.random() * 2 + 's';
+  document.body.appendChild(confetti);
+
+  setTimeout(() => {
+    confetti.remove();
+  }, 5000);
 }
 
-// Bintang berkelip
-const stars = document.getElementById('stars');
-for (let i = 0; i < 50; i++) {
-  const star = document.createElement('div');
-  star.className = 'star';
-  star.style.top = Math.random() * 100 + '%';
-  star.style.left = Math.random() * 100 + '%';
-  star.style.animationDelay = `${Math.random() * 2}s`;
-  stars.appendChild(star);
-}
-
-// YouTube API
-let player;
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('player', {
-    height: '0',
-    width: '0',
-    videoId: 'I1D7jRktEyU',
-    playerVars: {
-      autoplay: 1,
-      controls: 0,
-      loop: 1,
-      playlist: 'I1D7jRktEyU'
-    },
-    events: {
-      onReady: (event) => {
-        document.getElementById("playMusic").addEventListener("click", () => {
-          event.target.playVideo();
-          document.getElementById("playMusic").style.display = "none";
-        });
-      }
-    }
-  });
-}
+// Play confetti and sound when envelope opens
+envelope.addEventListener('click', () => {
+  envelope.classList.add('open');
+  setTimeout(() => {
+    card.classList.remove('hidden');
+    for (let i = 0; i < 30; i++) createConfettiPiece();
+    const pop = new Audio('https://www.fesliyanstudios.com/play-mp3/6962'); // Pop sound
+    pop.play();
+  }, 600);
+});

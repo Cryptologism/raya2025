@@ -1,46 +1,35 @@
 <!DOCTYPE html>
 <html lang="ms">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kad Raya 2025</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kad Raya 2025 - Sampul Interaktif</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Butang untuk mainkan lagu dari YouTube -->
-  <button id="playMusic">Mainkan Lagu Raya</button>
-  <div id="player" style="display: none;"></div>
-  <script src="https://www.youtube.com/iframe_api"></script>
+  <div class="container">
+    <div class="envelope" id="envelope">
+      <div class="flap"></div>
+      <div class="body"></div>
+      <div class="ketupat ketupat-1"></div>
+      <div class="ketupat ketupat-2"></div>
+    </div>
 
-  <main class="card">
-    <h1>Salam Aidilfitri 2025</h1>
-    <p class="greeting">
-      Khas buat <strong>Boss Mat dan Keluarga</strong>,<br><br>
-      Semoga Syawal yang penuh keberkatan ini menjadi titik permulaan kepada hati yang dibersihkan, 
-      hubungan yang dieratkan, dan rezeki yang diluaskan.<br><br>
-      Moga segala amalan kita sepanjang Ramadan diterima Allah, dan diganjari dengan pahala yang berlipat ganda.<br><br>
-      Firman Allah SWT dalam Surah Al-Baqarah ayat 185:<br>
-      <em>“...dan hendaklah kamu mengagungkan Allah atas petunjuk-Nya yang diberikan kepadamu agar kamu bersyukur.”</em><br><br>
-      Dengan penuh keinsafan, kami menyusun sepuluh jari memohon ampun dan maaf atas segala khilaf.<br><br>
-      <strong>Selamat Hari Raya Aidilfitri, Maaf Zahir dan Batin 🌙✨</strong>
-    </p>
-
-    <div class="lampu-container" id="lampuContainer"></div>
-
-    <div class="pelita-row" id="pelitaRow"></div>
-
-    <p class="from">
-      Ikhlas daripada,<br/>
-      [Nama Anda]
-    </p>
-  </main>
-
-  <!-- Bintang berkelip -->
-  <div class="stars" id="stars"></div>
-
-  <footer>
-    © 2025 Kad Raya Digital
-  </footer>
+    <div class="card hidden" id="card">
+      <h1>Salam Aidilfitri 2025</h1>
+      <p>
+        Khas buat <strong>Boss Mat dan Keluarga</strong>,<br><br>
+        Semoga Syawal yang penuh keberkatan ini menjadi titik permulaan kepada hati yang dibersihkan, 
+        hubungan yang dieratkan, dan rezeki yang diluaskan.<br><br>
+        Moga segala amalan kita sepanjang Ramadan diterima Allah, dan diganjari dengan pahala yang berlipat ganda.<br><br>
+        Firman Allah SWT dalam Surah Al-Baqarah ayat 185:<br>
+        <em>“...dan hendaklah kamu mengagungkan Allah atas petunjuk-Nya yang diberikan kepadamu agar kamu bersyukur.”</em><br><br>
+        Dengan penuh keinsafan, kami menyusun sepuluh jari memohon ampun dan maaf atas segala khilaf.<br><br>
+        <strong>Selamat Hari Raya Aidilfitri, Maaf Zahir dan Batin 🌙✨</strong>
+      </p>
+      <p class="from">Ikhlas daripada,<br>[Nama Anda]</p>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
