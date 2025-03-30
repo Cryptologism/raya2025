@@ -1,14 +1,13 @@
-// Lampu Raya Animation
+// Lampu minimalist
 const lampuContainer = document.getElementById('lampuContainer');
-
 for (let i = 0; i < 5; i++) {
   const lampu = document.createElement('div');
-  lampu.classList.add('lampu');
-  lampu.style.animationDelay = `${i * 0.3}s`;
+  lampu.className = 'lampu';
+  lampu.style.animationDelay = `${i * 0.2}s`;
   lampuContainer.appendChild(lampu);
 }
 
-// Pelita Images
+// Pelita icon
 const pelitaRow = document.getElementById('pelitaRow');
 for (let i = 0; i < 2; i++) {
   const pelita = document.createElement('img');
