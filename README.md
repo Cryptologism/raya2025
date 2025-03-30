@@ -1,5 +1,5 @@
 # raya2025
-Salam Aidilfitri buat semua yang kukenali — keluarga, sahabat, teman seperjuangan, dan followers yang sentiasa menyokong.
+Salam Aidilfitri buat semua yang kukenali — keluarga, sahabat, teman seperjuangan, yang sentiasa menyokong.
 
 Dengan penuh rasa syukur dan rendah hati, kuhadiahkan kad raya digital ini khas buat kalian semua.
 
