@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #0d1b2a, #1b263b);
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.lampu-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.lampu {
+  width: 15px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 0 6px;
+  background-color: yellow;
+  animation: blink 1.5s infinite alternate;
+}
+
+.lampu:nth-child(2) { background-color: lime; }
+.lampu:nth-child(3) { background-color: cyan; }
+.lampu:nth-child(4) { background-color: magenta; }
+.lampu:nth-child(5) { background-color: orange; }
+
+@keyframes blink {
+  0% { opacity: 0.2; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1.1); }
+}
+
+.card {
+  max-width: 500px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  color: #fdd835;
+  font-size: 2em;
+}
+
+.greeting {
+  margin: 20px 0;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+.from {
+  font-style: italic;
+  color: #cfcfcf;
+  margin-top: 20px;
+}
+
+.pelita {
+  width: 80px;
+  margin: 15px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.pelita-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 40px;
+  color: #aaa;
+}
